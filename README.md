@@ -15,3 +15,5 @@ Para iniciar, es necesario que todos tengan el proyecto a nivel local.
 ## Participantes de la cursada
 - David Ezequiel Assen
 - Mateo Manente
+- Facundo Javier Casas
+
