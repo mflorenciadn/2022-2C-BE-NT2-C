@@ -13,4 +13,7 @@ Para iniciar, es necesario que todos tengan el proyecto a nivel local.
 - Hacer un **pull request** a la rama principal _main_. Si existieran conflictos, deberás resolverlos.
 
 ## Participantes de la cursada
+
 - Javier Mondini
+- David Ezequiel Assen
+
