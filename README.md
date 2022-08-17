@@ -14,3 +14,5 @@ Para iniciar, es necesario que todos tengan el proyecto a nivel local.
 
 ## Participantes de la cursada
 - Carolina Rajcic
+- David Ezequiel Assen
+- Facundo Javier Casas
