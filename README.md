@@ -17,6 +17,7 @@ Para iniciar, es necesario que todos tengan el proyecto a nivel local.
 - David Ezequiel Assen
 - Diego Tomassetti
 =======
+- Alejo Ezequiel Conde
 - Carolina Rajcic
 - David Ezequiel Assen
 - Mateo Manente
