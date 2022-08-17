@@ -14,3 +14,4 @@ Para iniciar, es necesario que todos tengan el proyecto a nivel local.
 
 ## Participantes de la cursada
 - David Ezequiel Assen
+- Juan Sebastian Ferreyros
