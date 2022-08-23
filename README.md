@@ -15,6 +15,7 @@ Para iniciar, es necesario que todos tengan el proyecto a nivel local.
 ## Participantes de la cursada
 - David Ezequiel Assen
 - Diego Tomassetti
+- Alejo Ezequiel Conde
 - Juan Sebastian Ferreyros
 - Carolina Rajcic
 - Mateo Manente
