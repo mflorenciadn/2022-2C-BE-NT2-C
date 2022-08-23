@@ -17,5 +17,11 @@ Para iniciar, es necesario que todos tengan el proyecto a nivel local.
 - David Ezequiel Assen
 - Mateo Manente
 - Facundo Javier Casas
-- Facundo Javier Casas
 - Juan Montesino
+- Esteban Ezequiel Vivas
+- Martín Del Rosario
+- Diego Tomassetti
+- Carolina Rajcic
+- Mateo Manente
+- Facundo Javier Casas
+- Patricio Simosis
