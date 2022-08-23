@@ -13,15 +13,14 @@ Para iniciar, es necesario que todos tengan el proyecto a nivel local.
 - Hacer un **pull request** a la rama principal _main_. Si existieran conflictos, deberás resolverlos.
 
 ## Participantes de la cursada
+- David Ezequiel Assen
+- Diego Tomassetti
 - Juan Sebastian Ferreyros
 - Carolina Rajcic
-- David Ezequiel Assen
 - Mateo Manente
 - Facundo Javier Casas
+- Javier Mondini
 - Juan Montesino
 - Esteban Ezequiel Vivas
 - Martín Del Rosario
-- Diego Tomassetti
-- Carolina Rajcic
-- Mateo Manente
 - Patricio Simosis
