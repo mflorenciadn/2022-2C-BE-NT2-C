@@ -14,14 +14,14 @@ Para iniciar, es necesario que todos tengan el proyecto a nivel local.
 
 ## Participantes de la cursada
 - David Ezequiel Assen
-- Diego Tomassetti
-- Alejo Ezequiel Conde
-- Juan Sebastian Ferreyros
-- Carolina Rajcic
-- Mateo Manente
 - Facundo Javier Casas
+- Alejo Ezequiel Conde
+- Martín Del Rosario
+- Juan Sebastian Ferreyros
+- Mateo Manente
 - Javier Mondini
 - Juan Montesino
-- Esteban Ezequiel Vivas
-- Martín Del Rosario
+- Carolina Rajcic
 - Patricio Simosis
+- Diego Tomassetti
+- Esteban Ezequiel Vivas
