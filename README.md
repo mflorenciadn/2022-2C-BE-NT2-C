@@ -16,6 +16,7 @@ Para iniciar, es necesario que todos tengan el proyecto a nivel local.
 - David Ezequiel Assen
 - Facundo Javier Casas
 - Alejo Ezequiel Conde
+- Nazareno Lucero Delias
 - Martín Del Rosario
 - Juan Sebastian Ferreyros
 - Mateo Manente
