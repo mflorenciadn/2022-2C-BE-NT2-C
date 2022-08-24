@@ -18,6 +18,7 @@ Para iniciar, es necesario que todos tengan el proyecto a nivel local.
 - Alejo Ezequiel Conde
 - Nazareno Lucero Delias
 - Martín Del Rosario
+- Belen Esquivel
 - Juan Sebastian Ferreyros
 - Mateo Manente
 - Javier Mondini
