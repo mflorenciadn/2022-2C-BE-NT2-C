@@ -27,3 +27,4 @@ Para iniciar, es necesario que todos tengan el proyecto a nivel local.
 - Patricio Simosis
 - Diego Tomassetti
 - Esteban Ezequiel Vivas
+- Noelia Taboada Vega
