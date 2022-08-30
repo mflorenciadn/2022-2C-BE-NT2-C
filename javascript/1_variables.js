@@ -5,56 +5,54 @@
 /////////////
 //** let **//
 /////////////
-let chau;
-chau = "chau"
-console.log(chau)
+let cliente = 'Pedro';
+let precioConDescuento = 220;
 
-chau = 123
-console.log(chau)
+// Se puede reasignar
+cliente = 'Pedra';
+cliente = true;
 
+// Se pueden declarar sin inicializar
+let precio;
+// Puedo reasignarle un valor (sin usar let antes del nombre de la variable)
+precio = 100;
 
-// LET no admite hoisting
-// miNombre = 'Florencia'
-
-// function saludar(){
-//     console.log(miNombre)
-// }
-
-// saludar()
-
-// let miNombre;
-
-// console.log(miNombre)
-
-////
-
-
+console.log(precio);
+console.log(cliente);
+console.log(precioConDescuento);
 
 
 /////////////
 //** var **//
 /////////////
-var hola = "hola"
-console.log(hola)
+var alumno = 'Carlos';
 
-var hola = 123
-console.log(hola)
+// Se puede reasignar
+alumno = 'Pedra';
+alumno = true;
 
-//var admite hoisting
-miNombre2 = "Florencia"
+// Se puede declarar más de una vez
+var alumno = 'Cristian';
 
-function saludar2(){
-    console.log(miNombre2)
+console.log(alumno);
+
+// Hoisting
+nombre = 'Florencia';
+
+function saludar (){
+    console.log(nombre)
 }
 
-saludar2()
+saludar();
 
-var miNombre2;
-console.log(miNombre2)
+var nombre;
+
 
 ///////////////
 //** const **//
 ///////////////
-const pepe = "pepe";
-//pepe = 1234;
 
+const mascota = 'Buddy';
+
+//NO se puede reasignar
+mascota = 'Luna'; //arroja error en la consola por más que no se vea en el IDE
