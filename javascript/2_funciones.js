@@ -62,7 +62,7 @@ retornarApellido('Pepe')
 const CODIGO_CLIENTE_VIP = 35;
 
 // Extraer condicionales
-const esClienteConDescuento = codigoCliente === CODIGO_CLIENTE_VIP && metodoDePago === 'DEBITO'
+const esClienteConDescuento = codigoCliente === CODIGO_CLIENTE_VIP && metodoDePago === 'DEBITO';
 
 // const generarDescuento = () => {
 //     if(esClienteConDescuento){

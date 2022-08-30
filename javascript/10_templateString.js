@@ -10,6 +10,6 @@ function textoDesdeFuncion() {
     return "Este texto proviene de la función"
 };
 
-console.log( producto + " $" + precio + ", Marca: " + marca );
+console.log(producto + " $" + precio + ", Marca: " + marca);
 
 console.log(`${producto} $${precio}, Marca: ${marca}, ${textoDesdeFuncion()}`);

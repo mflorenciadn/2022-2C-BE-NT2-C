@@ -27,9 +27,12 @@ console.log(producto);
 
 // Spread operator con arrays //
 const tecnologias = ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js'];
+const tecnologias2 = ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js'];
 
-const nuevoArreglo1 = [...tecnologias, 'GraphQL']; // Añade todos los elementos de "tecnologias" al final de nuevoArreglo
-const nuevoArreglo2 = ['GraphQL', ...tecnologias]; // Añade todos los elementos de "tecnologias" al inicio de nuevoArreglo
+
+const nuevoArreglo1 = [...tecnologias, 'GraphQL']; // Añade todos los elementos de "tecnologias" al inicio de nuevoArreglo
+const nuevoArreglo2 = ['GraphQL', ...tecnologias]; // Añade todos los elementos de "tecnologias" al infinalicio de nuevoArreglo
+const superArreglo = [...tecnologias, ...tecnologias2]
 
 console.log(tecnologias);
 console.log(nuevoArreglo1);
