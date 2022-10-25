@@ -9,6 +9,8 @@ import {
 import HelpScreen from "../screens/HelpScreen";
 import HomeScreen from "../screens/HomeScreen";
 
+const Drawer = createDrawerNavigator();
+
 function CustomDrawerContent(props) {
   const onLogout = () => {
     Alert.alert("Te vamos a extrañar", "Vuelva prontos");
@@ -35,12 +37,22 @@ function CustomDrawerContent(props) {
 
   return (
     <DrawerContentScrollView {...props}>
-      <View style={{ flexDirection: "row", marginBottom: 20}}>
+      <View style={{ flexDirection: "row", marginBottom: 20 }}>
         <Image
           style={{ width: 100, height: 100 }}
           source={require("../assets/astronaut.png")}
         />
-        <Text style={{ fontSize: 20, fontWeight: "700", textAlignVertical: "auto", marginVertical: 25, color: "teal"}}>Nuevas Tecnologías 2</Text>
+        <Text
+          style={{
+            fontSize: 20,
+            fontWeight: "700",
+            textAlignVertical: "auto",
+            marginVertical: 25,
+            color: "teal",
+          }}
+        >
+          Nuevas Tecnologías 2
+        </Text>
       </View>
 
       <DrawerItemList {...props} />
@@ -51,8 +63,6 @@ function CustomDrawerContent(props) {
     </DrawerContentScrollView>
   );
 }
-
-const Drawer = createDrawerNavigator();
 
 export default function DrawerNavigator() {
   return (
@@ -89,7 +99,7 @@ export default function DrawerNavigator() {
         }}
       />
       <Drawer.Screen
-        name="HelpScreen"
+        name="Centro de ayuda"
         component={HelpScreen}
         options={{
           title: "Centro de ayuda",
