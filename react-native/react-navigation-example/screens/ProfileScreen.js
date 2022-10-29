@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { StyleSheet, Text, View, Button } from "react-native";
+import { useAuth } from "../context/AuthProvider";
 
 export default function ProfileScreen({ navigation }) {
-  const isAuthenticated = false;
-  const [name, setName] = useState("");
+  const { isAuthenticated, user } = useAuth();
 
   const goHome = () => {
     navigation.navigate("HomeStack", { screen: "Home" });
@@ -12,18 +12,20 @@ export default function ProfileScreen({ navigation }) {
   return (
     <View style={styles.container}>
       {isAuthenticated ? (
-        <Text style={styles.title}>¡Hola {name}!</Text>
+        <Text style={styles.title}>¡Hola {user.name}!</Text>
       ) : (
-        <Text style={styles.title}>¡Hola terrícola!</Text>
+        <>
+          <Text style={styles.title}>¡Hola terrícola!</Text>
+          <Text style={styles.subtitle}>
+            Iniciá sesión para acceder a más contenido
+          </Text>
+          <Button
+            title="Iniciar sesión"
+            onPress={() => navigation.navigate("Login")}
+            color="teal"
+          />
+        </>
       )}
-      <Text style={styles.subtitle}>
-        Iniciá sesión para acceder a más contenido
-      </Text>
-      <Button
-        title="Iniciar sesión"
-        onPress={() => navigation.navigate("Login")}
-        color="teal"
-      />
       <Button title="Ir al inicio" onPress={goHome} color="teal" />
     </View>
   );

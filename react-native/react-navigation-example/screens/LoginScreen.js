@@ -2,19 +2,20 @@ import React, { useState } from "react";
 import { StyleSheet, View, Text, Alert } from "react-native";
 import { Button } from "../components/Button";
 import Input from "../components/Input";
+import { useAuth } from "../context/AuthProvider";
 
 export function LoginForm({ navigation }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const { user } = useAuth();
   const correctUser = {
     email: "test@test.com",
-    password: "admin",
-    name: "Florencia",
+    password: "test",
   };
 
-  const isIncompleteData = !email || !password;
-
   const onSubmit = () => {
+    const isIncompleteData = !email || !password;
+
     if (isIncompleteData) {
       Alert.alert("Acceso inválido", "Todos los campos son obligatorios");
       return;
@@ -22,10 +23,9 @@ export function LoginForm({ navigation }) {
 
     try {
       if (email === correctUser.email && password === correctUser.password) {
-        Alert.alert("¡Te damos la bienvenida!");
+        Alert.alert(`Hola ${user.name}`, "¡Te damos la bienvenida!");
         navigation.navigate("Drawer", {
           screen: "HomeScreen",
-          params: { name: correctUser.name },
         });
       } else {
         Alert.alert(
@@ -40,7 +40,7 @@ export function LoginForm({ navigation }) {
   };
 
   return (
-    <View style={styles.formContainer}>
+    <View>
       <Input
         placeholder="Correo electrónico"
         value={email}
@@ -53,11 +53,7 @@ export function LoginForm({ navigation }) {
         onChangeText={(text) => setPassword(text)}
         isPassword
       />
-      <Button
-        onPress={onSubmit}
-        title="Iniciar sesión"
-        disabled={isIncompleteData}
-      />
+      <Button onPress={onSubmit} title="Iniciar sesión" />
     </View>
   );
 }

@@ -5,7 +5,7 @@ export function Button(props) {
   const { onPress, title } = props;
 
   return (
-    <Pressable style={styles.button} onPress={onPress}>
+    <Pressable style={styles.button} onPress={onPress} >
       <View>
         <Text style={styles.buttonText}>{title}</Text>
       </View>

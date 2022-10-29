@@ -8,10 +8,13 @@ import {
 } from "@react-navigation/drawer";
 import HelpScreen from "../screens/HelpScreen";
 import HomeScreen from "../screens/HomeScreen";
+import { useAuth } from "../context/AuthProvider";
 
 const Drawer = createDrawerNavigator();
 
 function CustomDrawerContent(props) {
+  const { isAuthenthicated } = useAuth();
+
   const onLogout = () => {
     Alert.alert("Te vamos a extrañar", "Vuelva prontos");
   };
@@ -59,7 +62,9 @@ function CustomDrawerContent(props) {
       <View style={{ margin: 20 }}>
         <Button title="Hace click!" onPress={onPress} color="teal" />
       </View>
-      <DrawerItem label="Cerrar sesión" onPress={onLogout} />
+      {isAuthenthicated && (
+        <DrawerItem label="Cerrar sesión" onPress={onLogout} />
+      )}
     </DrawerContentScrollView>
   );
 }
@@ -95,7 +100,7 @@ export default function DrawerNavigator() {
           },
           headerTitleAlign: "center",
           drawerActiveBackgroundColor: "#00808050",
-          drawerActiveTintColor: "white"
+          drawerActiveTintColor: "white",
         }}
       />
       <Drawer.Screen

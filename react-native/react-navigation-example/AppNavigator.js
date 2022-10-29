@@ -2,13 +2,15 @@ import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import HomeNavigator from "./navigation/HomeNavigator";
 import ProfileNavigator from "./navigation/ProfileNavigator";
-
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import NotificationsScreen from "./screens/NotificationsScreen";
+import { useAuth } from "./context/AuthProvider";
 
 const Tab = createBottomTabNavigator();
 
 export default function AppNavigator() {
+  const { isAuthenticated } = useAuth();
+
   return (
     <Tab.Navigator
       screenOptions={{
@@ -38,17 +40,19 @@ export default function AppNavigator() {
           ),
         }}
       />
-      <Tab.Screen
-        name="Notifications"
-        component={NotificationsScreen}
-        options={{
-          headerShown: false,
-          tabBarLabel: "Notificaciones",
-          tabBarIcon: ({ size, color }) => (
-            <MaterialCommunityIcons name="bell" color={color} size={size} />
-          ),
-        }}
-      />
+      {isAuthenticated && (
+        <Tab.Screen
+          name="Notifications"
+          component={NotificationsScreen}
+          options={{
+            headerShown: false,
+            tabBarLabel: "Notificaciones",
+            tabBarIcon: ({ size, color }) => (
+              <MaterialCommunityIcons name="bell" color={color} size={size} />
+            ),
+          }}
+        />
+      )}
     </Tab.Navigator>
   );
 }
